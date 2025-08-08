@@ -44,11 +44,19 @@ SELECT
 FROM pedidos p
 JOIN clientes c ON p.cliente_id = c.id;
 
+
+INSERT into clientes (nome, cidade, estado) values
+('Ana', 'Marília', 'SP');
+
+INSERT into pedidos (cliente_id, produto, valor, data_pedido) values
+(4, 'SSD', 270.00, '2025-06-01');
+
 SELECT * FROM relatorio_pedidos;
 
-Insert into relatorios_pedidos values ('Ana','Marília','SSD',270.00,'2025-06-01');
 
-CREATE VIEW pedido_simples AS
+/*Insert into relatorios_pedidos values ('Ana','Marília','SSD',270.00,'2025-06-01');
+
+/*CREATE VIEW pedido_simples AS
 SELECT id, cliente_id, produto, valor data_pedido
 FROM pedidos;
 
