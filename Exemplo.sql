@@ -64,3 +64,4 @@ INSERT INTO pedido_simples VALUES (cliente_id, produto, valor, data_pedido )
 values (3, 'SSD', 270.00, '2025-06-01');
 
 SELECT * FROM pedido_simples;
+
